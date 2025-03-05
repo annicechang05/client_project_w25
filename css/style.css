@@ -1,0 +1,129 @@
+body {
+    background-color: #f5f5f5;
+}
+
+main {
+    padding: 15px;
+}
+
+footer {
+    background-color: #ffcb05;
+    padding: 20px;
+}
+
+footer a:visited {
+    color: black;
+}
+
+p, h1, h2, h3, li, a, figcaption {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.skip:focus {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.table_contents {
+    background-color: rgba(0,39,76,1);
+    padding: 10px;
+    color: #f5f5f5;
+}
+
+.table_contents a:visited {
+    color: #f5f5f5;
+}
+
+
+header h1 {
+    background-color: #ffcb05;
+    padding: 20px;
+}
+
+/*Home Page*/
+.classic_logo {
+    width: 75px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container .welcome {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+}
+
+.container .physical {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2;
+}
+
+
+.container .mental {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 2;
+}
+
+.container #life-outside-classroom {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 4;
+}
+
+.container .physical .image {
+    width: 100%;
+    text-align: center;
+}
+
+/*Page 1, 2, 3*/
+
+.page_1_container, .page_2_container, .page_3_container {
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.page_2_container .tutoring_image {
+    width: 90%;
+}
+
+.page_3_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    place-items: center;
+}
+
+.page_3_container .image1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+    width: 90%;
+}
+
+.page_3_container .image2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 1;
+    width: 90%;
+}
+
+.north_quad {
+    width: 95%;
+    
+}
+
+.SI_logo img {
+    width: 80%;
+}
+
+
+
+
+
+
+
