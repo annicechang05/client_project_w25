@@ -114,6 +114,11 @@ header h1 {
     text-align: center;
 }
 
+.container .mental .image {
+    width: 100%;
+    text-align: center;
+}
+
 /*Page 1, 2, 3*/
 
 .page_1_container, .page_2_container, .page_3_container {
