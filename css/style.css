@@ -4,11 +4,35 @@ body {
 
 main {
     padding: 15px;
+    padding-bottom: 0px;
+    margin: 30px;
+}
+
+p, li{
+    padding-top: 10px;
+}
+
+ol, ul {
+    padding-left: 25px;
+}
+
+h1, h2, h3, h4 {
+    margin-top: 15px;
+}
+
+figure {
+    padding: 20px;
 }
 
 footer {
     background-color: #ffcb05;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    padding: 5px;
+    padding-left: 20px;
 }
 
 footer a:visited {
@@ -43,20 +67,29 @@ h1, h2, h3 {
 }
 
 .table_contents {
+    list-style: none;
     background-color: f5f5f5;
     padding: 10px;
     color: #00274c;
     font-weight: bold;
     border: #00274C solid 3px;
+    display: flex;
 }
 
 .table_contents li {
     margin: 10px;
     padding: 3px;
+    text-decoration: none;
+}
+
+.table_contents a {
+    color: #00274C;
+    text-decoration: none;
 }
 
 .table_contents a:visited {
     color: #00274C;
+    text-decoration: none;
 }
 
 
@@ -74,6 +107,7 @@ header h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
+    padding-top: 0px;
 }
 
 .container .welcome {
@@ -161,7 +195,153 @@ header h1 {
     width: 80%;
 }
 
+.error {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
+.error-container {
+    text-align: center;
+  }
+
+#error h1{
+    font-size: 6rem;
+    margin: 0;
+    color: #00274c;
+}
+
+#error p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+#error a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #00274c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+#error a:hover {
+    background-color: #00274c;
+}
+
+a.button {
+    display: inline-block;
+    background-color: #ffcb05;
+    color: black;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    margin: 15px;
+}
+  
+a.button:hover {
+    background-color: #d6b42a;
+}
+
+.book-advising {
+    list-style: none;
+    padding-left: 0px;
+}
+
+@media screen and (min-width: 800px){
+    p, li {
+        font-size: 18px;
+    }
+
+    header h1 {
+        font-size: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+    }
+    /*Home*/
+    .container h2 {
+        font-size: 40px;
+    }
+
+    .container {
+        gap: 30px;
+    }
+    .container p, h3 {
+        padding: 5px;
+        padding-top: 0px;
+    }
+
+    .mental figure {
+        text-align: center;
+    }
+
+    .mental .image {
+        max-width: 66%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #main-content h2 {
+        font-size: 33px;
+    }
+
+    #main-content h3 {
+        font-size: 25px;
+    }
+
+    .page_1_container .north_quad {
+        width: 75%;
+    }
+
+    .page_2_container .tutoring_image {
+        width: 75%;
+    }
+
+    .SI_logo img {
+        width: 40%;
+    }
+
+    .hover-figure {
+        display: inline-block;
+        position: relative;
+      }
+      
+    .hover-figure img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+      
+    .hover-figure figcaption {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, 20px);
+        opacity: 0;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 0.3rem 0.6rem;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        transition: transform 0.4s ease, opacity 0.4s ease;
+        max-width: 200px;
+    }
+      
+    .hover-figure:hover figcaption {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+
+
+}
 
 
 

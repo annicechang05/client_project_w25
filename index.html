@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DMSans">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Student Success Portal</title>
@@ -15,9 +16,9 @@
         <nav>
             <ul class="table_contents">
                 <li><a href = "index.html">Home</a></li>
-                <li><a href = "page_1.html">Academic Advising</a></li>
-                <li><a href = "page_2.html">Tutoring Site</a></li>
-                <li><a href = "page_3.html">First Gen</a></li>
+                <li><a href = "advising.html">Academic Advising</a></li>
+                <li><a href = "tutoring.html">Tutoring Site</a></li>
+                <li><a href = "firstgen.html">First Gen</a></li>
             </ul>
         </nav>
         <h1>Student Success Portal</h1>
@@ -41,7 +42,7 @@
             <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
             <article class="UHS">
                 <h3>University Health Service (UHS)</h3>
-                <figure>
+                <figure class="hover-figure">
                     <img src="images/UHS.jpg" alt="University Health Services building" class="image">
                     <figcaption class="image">University Health Services Building</figcaption>
                 </figure>
@@ -49,7 +50,7 @@
             </article>
             <article class="Rec">
                 <h3>Recreational Sports</h3>
-                <figure>
+                <figure class="hover-figure">
                     <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag." class="image">
                     <figcaption class="image">UMSI out in the fall!</figcaption>
                 </figure>
@@ -77,7 +78,7 @@
             <article>
                 <h3>Support Groups:</h3>
                 <p> Join peer support groups for shared experiences and collective coping strategies.</p>
-                <figure>
+                <figure class="hover-figure">
                     <img src="images/UMSI_DesignJam_GreatLakesWaterSafety_02.jpg" alt="Students working together at a table" class="image">
                     <figcaption class="image">UMSI students together!</figcaption>
                 </figure>
@@ -103,6 +104,28 @@
     <footer>
         <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
         <p>UMSI Website | <a href="https://www.si.umich.edu/">University of Michigan School of Information</a></p>
+        <p>Copyright by Annice Chang | <span id="year"> year</span></p>
     </footer>
 </body>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    window.onload = function() {
+    // Check if this is the user's first visit
+        if (!localStorage.getItem('hasVisited')) {
+        const now = new Date();
+        let greeting = "Welcome!";
+        
+        if (now.getHours() < 12) {
+            greeting = "Good morning! ☀️";
+        } else if (now.getHours() < 18) {
+            greeting = "Good afternoon! 🌼";
+        } else {
+            greeting = "Good evening! 🌙";
+        }
+
+        alert(greeting + " Thanks for visiting the UMSI site.");
+        localStorage.setItem('hasVisited', 'true');
+        }
+    }
+</script>
 </html>
